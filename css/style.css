@@ -3,13 +3,17 @@
   margin: 0;
   padding: 0;
 }
-
+@font-face {
+  font-family: 'GoogleSans';
+  src: url("../font/ProductSans-Regular.woff");
+}
 body{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'GoogleSans', sans-serif;
 }
 
-.faq{
+.container{
   width: 1000px;
+  height: 100%;
   margin: auto;
 }
 
@@ -19,14 +23,110 @@ body{
 
 .title{
   margin: 50px 0;
+  color: #3c4043;
+  font-family: 'Google Sans',sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;
+  padding: 64px 0 0 0;
 }
 
 .paragraph{
   line-height: 25px;
   margin: 20px 0;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 .link{
   text-decoration: none;
   color: #3399ff;
+}
+
+.header-top{
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+.header-top h3{
+  color: grey;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.logo-google{
+  width: 100px;
+  margin-right: 10px;
+}
+
+.link-list{
+  list-style: none;
+  display: flex;
+  padding: 15px 15px 0 0;
+}
+.link-list li{
+  padding-bottom: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.active a{
+  border-bottom: 3px solid #3367d6;
+  color: #3367d6;
+}
+.link-list li:hover a{
+  border-bottom: 3px solid #3367d6;
+  color: #3367d6;
+}
+.link-list a{
+  text-decoration: none;
+  color: black;
+  padding-bottom: 12px;
+}
+
+.header-bottom{
+  display: flex;
+}
+
+.account-logged{
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.img-account{
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+footer{
+  width: 100%;
+  background-color: #F5F5F5;
+  padding: 30px;
+}
+
+.footer-list{
+  display: flex;
+  list-style: none;
+}
+
+.footer-list a{
+  text-decoration: none;
+  color: rgba(61,61,61,.8);
+}
+span{
+  color: rgba(61,61,61,.8);
+  margin: 0 10px;
+}
+
+.wrapper-flex{
+  display: flex;
+  justify-content: space-between;
 }

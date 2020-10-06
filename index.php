@@ -42,11 +42,33 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Google Faqs</title>
   </head>
   <body>
-    <div class="faq">
+
+    <header>
+      <div class="header-top">
+        <img class="logo-google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_74x24dp.png" alt="logo_google">
+        <h3>Privacy e Termini</h3>
+      </div>
+      <div class="header-bottom">
+        <ul class="link-list">
+          <li><a href="#">Introduzione</a></li>
+          <li><a href="#">Norme sulla privacy</a></li>
+          <li><a href="#">Termini di servizio</a></li>
+          <li><a href="#">Tecnologie</a></li>
+          <li class="active"><a href="#">Domande frequenti</a></li>
+        </ul>
+        <div class="account-logged">
+          <img class="img-account" src="img/WhatsApp Image 2019-02-24 at 01.01.12.jpeg" alt="logo_account">
+          <p>robertodeltoro93@gmail.com</p>
+        </div>
+      </div>
+    </header>
+    <hr>
+    <div class="container">
 
       <?php
         foreach ($faqs as $faq) {
@@ -63,5 +85,27 @@
       ?>
 
     </div>
+
+    <footer>
+      <div class="container">
+        <div class="wrapper-flex">
+          <ul class="footer-list">
+            <li><a href="#">Google</a><span>&bull;</span></li>
+            <li><a href="#">Tutto su Google</a><span>&bull;</span></li>
+            <li><a href="#">Privacy</a><span>&bull;</span></li>
+            <li><a href="#">Termini</a></li>
+          </ul>
+          <div class="select">
+            <i class="fas fa-comment-dots"></i>
+            <select class="" name="">
+              <option value="">italiano</option>
+              <option value="">Deutsch</option>
+              <option value="">francais</option>
+              <option value="">Espanol</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
